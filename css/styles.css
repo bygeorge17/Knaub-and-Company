@@ -1,0 +1,379 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    color: #3333336e;
+}
+
+.hero {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.hero-content {
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.bg-light {
+    background: #eaeaea !important;
+}
+
+#testimonials .carousel-caption {
+    position: static;
+    color: #333;
+}
+
+#testimonials .carousel-item {
+    text-align: center;
+    padding: 30px;
+}
+
+#testimonials .blockquote-footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+/* About-US */
+.bookkeeper-section h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.bookkeeper-section p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bookkeeper-section ul li {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.bookkeeper-profile h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .bookkeeper-profile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .bookkeeper-profile img {
+        margin-bottom: 10px;
+    }
+}
+
+.office-manager-section h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.office-manager-section p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.office-manager-section ul li {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.office-manager-profile h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .office-manager-profile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .office-manager-profile img {
+        margin-bottom: 10px;
+    }
+}
+.cpa-section h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.cpa-section p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.cpa-section ul li {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.cpa-profile h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .cpa-profile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .cpa-profile img {
+        margin-bottom: 10px;
+    }
+}
+.bookkeeper-section-2 h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.bookkeeper-section-2 p {
+    font-size: 1.125rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bookkeeper-section-2 ul li {
+    font-size: 1.125rem;
+    color: #555;
+}
+
+.bookkeeper-section-2 h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .bookkeeper-section-2 img {
+        margin-bottom: 10px;
+    }
+    
+    .bookkeeper-section-2 {
+        text-align: center;
+    }
+}
+/* Services */
+.services{
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 0 25px 0;
+    display: grid;
+    gap: 30px;
+}
+.services-section {
+    background-size: cover;
+    position: relative;
+    border-top-left-radius: 120px;  /* Redondear esquina superior izquierda */
+    border-bottom-right-radius: 120px;  /* Redondear esquina inferior derecha */
+}
+
+.services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Add a dark overlay for better text readability */
+    border-top-left-radius: 280px;  /* Asegurar que la superposición tenga los mismos bordes redondeados */
+    border-bottom-right-radius: 280px; 
+}
+
+.services-section .content {
+    position: relative;
+    z-index: 1;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.services-section .services-details p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        text-align: center;
+        background-clip: content-box;
+    }
+    .services-section .content h2{
+        font-size: medium;
+    }
+    .services-section .content p{
+        font-size: x-small;
+    }
+}
+
+.income-tax-section {
+    background: url('../img/incomeTax.jpg') no-repeat center center;
+}
+.consulting-section {
+    background: url('../img/consulting.jpg') no-repeat center center;
+}
+
+.bookkeeping-payroll-section {
+    background: url('../img/payroll.jpg') no-repeat center center;
+}
+
+.quickbooks-section {
+    background: url('../img/quickbook.jpg') no-repeat center center;
+}
+
+/* Contacto */
+.contact-section {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 60px 20px;
+}
+
+.contact-section .content {
+    padding: 20px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-section .contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-section .contact-form .form-control {
+    background: #fff;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact-section .contact-form .btn {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        text-align: center;
+    }
+}
+/* Footer */
+.footer-section {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.footer-section h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #f8f9fa;
+}
+
+.footer-section p, 
+.footer-section ul {
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #dcdcdc;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-section ul li i {
+    margin-right: 0.5rem;
+}
+
+.footer-section .col-md-4 {
+    margin-bottom: 1.5rem;
+}
+
+.footer-section .row {
+    margin-bottom: 1.5rem;
+}
+
+.footer-section .row.mt-4 {
+    margin-top: 2rem;
+}
+
+.footer-section .col.text-center {
+    font-size: 0.875rem;
+    color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-section .col-md-4 {
+        margin-bottom: 2rem;
+    }
+    
+    .footer-section ul {
+        text-align: center;
+    }
+}
